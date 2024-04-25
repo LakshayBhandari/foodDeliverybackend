@@ -63,8 +63,7 @@ This project is the backend for a Food Delivery application. It manages organiza
 6. **Usage**
    Access the API through the base URL http://localhost:3000. The API routes include:
 
-   POST /organizations - Create a new organization.
-   POST /items - Add a new item.
-   POST /pricing - Create a new pricing record.
-   POST /pricing/calculate-price - Calculate the price for delivery based on specified parameters.
-   Explore the API in detail using the Swagger UI accessible at http://localhost:3000/api-docs.
+   - **POST /organizations** - Create a new organization.
+   - **POST /items** - Add a new item.
+   - **POST /pricing** - Create a new pricing record.
+   - **POST /pricing/calculate-price** - Calculate the price for delivery based on specified parameters.
