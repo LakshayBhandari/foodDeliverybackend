@@ -17,7 +17,11 @@ app.use("/items", itemRoutes);
 app.use("/pricing", pricingRoutes);
 
 // Swagger UI
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
+  customSiteTitle: "Food Delivery Backend ",
+  customCss: '.swagger-ui .topbar { display: none }',
+}));
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
