@@ -39,7 +39,7 @@ exports.calculatePrice = async (req, res) => {
       totalPrice += Math.round((total_distance - pricing.base_distance_in_km) * pricing.km_price);
     }
 
-    res.json({ total_price: totalPrice });
+    res.json({ total_price_in_cents: totalPrice });
   } catch (error) {
     console.log(error)
     res.status(500).json({ error: 'Internal server error' });
