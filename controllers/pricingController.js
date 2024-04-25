@@ -16,6 +16,7 @@ exports.createPricing = async (req, res) => {
     });
     res.status(201).json({ message: 'Pricing created', pricing });
   } catch (error) {
+    console.log(error)
     res.status(500).json({ error: 'Internal server error' });
   }
 };

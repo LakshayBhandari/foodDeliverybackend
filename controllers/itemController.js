@@ -9,6 +9,7 @@ exports.createItem = async (req, res) => {
     });
     res.status(201).json({ message: 'Item created', item });
   } catch (error) {
+    console.log(error)
     res.status(500).json({ error: 'Internal server error' });
   }
 };
